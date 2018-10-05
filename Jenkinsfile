@@ -9,7 +9,7 @@ pipeline {
     stage('shell') {
       steps {
         sh '''cat /etc/os-release
-apt-get install make'''
+sudo apt-get install make'''
       }
     }
   }
