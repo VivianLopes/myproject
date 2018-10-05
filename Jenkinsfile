@@ -8,7 +8,8 @@ pipeline {
   stages {
     stage('shell') {
       steps {
-        sh ' dmesg | grep Linux | grep version'
+        sh '''cat /proc/version || true
+cat /etc/os-release'''
       }
     }
   }
