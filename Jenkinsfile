@@ -8,8 +8,8 @@ pipeline {
   stages {
     stage('shell') {
       steps {
-        sh '''cat /proc/version || true
-cat /etc/os-release'''
+        sh '''cat /etc/os-release
+apt-get install make'''
       }
     }
   }
