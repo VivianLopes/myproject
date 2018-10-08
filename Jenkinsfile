@@ -8,7 +8,8 @@ pipeline {
   stages {
     stage('shell') {
       steps {
-        sh '''cat /etc/os-release
+        sh '''pwd
+cat /etc/os-release
 which make'''
       }
     }
