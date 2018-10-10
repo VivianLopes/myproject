@@ -8,12 +8,7 @@ pipeline {
   stages {
     stage('shell') {
       steps {
-        sh '''pwd
-mkdir foo
-mkdir ../bar
-ls -R ..
-cat /etc/os-release
-which make'''
+        sh 'which jps'
       }
     }
   }
