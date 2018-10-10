@@ -8,7 +8,8 @@ pipeline {
   stages {
     stage('shell') {
       steps {
-        sh 'which jps'
+        sh '''which jps
+ls -l /usr/bin/ | grep jps'''
       }
     }
   }
